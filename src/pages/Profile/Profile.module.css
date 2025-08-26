@@ -1,0 +1,126 @@
+/* profile.module.css */
+.page {
+  background-color: #eef2f7;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #102a57;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-weight: 600;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.links a {
+  color: #f0f4ff;
+  margin-left: 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+}
+
+.links a:hover {
+  background-color: #154ea0;
+  color: #c3daff;
+}
+
+.activeLink {
+  color: #c3daff;
+  font-weight: 900;
+  border-bottom: 3px solid #c3daff;
+  padding-bottom: 0.3rem;
+}
+
+/* Main Content */
+.container {
+  max-width: 1050px;
+  width: 100%;
+  margin: 3rem auto 5rem;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  border-radius: 15px;
+  padding: 3rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #102a57;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  font-size: 1.25rem;
+  color: #425a85;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section {
+  margin: 2rem 0;
+}
+
+.heading {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #0b2247;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 3px solid #0b2247;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.list {
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.5;
+  list-style-type: disc;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .container {
+    padding: 1.5rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+}
