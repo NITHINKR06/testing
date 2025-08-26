@@ -133,7 +133,7 @@ const LoginForm = () => {
       {message && <p className={styles.successMessage}>{message}</p>}
 
       <div style={{ textAlign: "center", marginTop: "2rem" }}>
-        Don't have an account?{" "}
+        Don&apos;t have an account?{" "}
         <span
           style={{ color: "#0070f3", cursor: "pointer", fontWeight: "600" }}
           onClick={() => router.push("/signup")}
